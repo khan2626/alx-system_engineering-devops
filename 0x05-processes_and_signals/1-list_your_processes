@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# It displays list of current prcoesses
+
+ps -auxf
