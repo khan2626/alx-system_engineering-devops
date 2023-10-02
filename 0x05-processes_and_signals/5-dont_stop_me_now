@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
 # It stops 4-to_infinity_beyond process
 
-kill "$(pgrep -f 4-to_infinity_and_beyond)"
+pids=$(pgrep "4-to_infinity_and_beyond")
+
+if [ -n "$pids" ];
+then
+    kill $pids
+fi
