@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# It pings an IP address passed as an argument
+
+if [ $# -eq 0 ]
+then
