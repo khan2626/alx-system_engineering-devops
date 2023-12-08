@@ -39,7 +39,7 @@ frontend  ubest-frontend-http
         default_backend ubest-backend
 
 frontend ubest-frontend-https
-	bind *:443 ssl crt /etc/haproxy/certs/www.ubest.tech.pem
+	bind *:443 ssl crt /etc/letsencrypt/live/www.ubest.tech/fullchain.pem
 	http-request set-header X-Forwarded-Proto https
 	default_backend ubest-backend
 
